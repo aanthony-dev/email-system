@@ -1,0 +1,80 @@
+<!-- The Inbox Item page  for the admin side of the email system. -->
+<!-- Author: Angus Anthony (A00429430) -->
+<!-- Author: Celine Ayoub (A00423097) -->
+
+<html>
+
+<head>
+    <title>Admin Email System</title>
+
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/composeStyle.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body onload="loadEmail('inboxItemA.html')">
+
+    <div class="container item-container">
+
+        <div class="header">
+
+            <!-- Inbox Item header -->
+            <div class="input-group-text">
+                VIEWING INBOX ITEM
+            </div>
+
+            <!-- From -->
+            <div class="input-group-text" id="from">
+                <label>From</label>
+            </div>
+
+            <!-- Cc -->
+            <div class="input-group-text" id="cc">
+                <label>Cc</label>
+            </div>
+
+            <!-- Subject -->
+            <div class="input-group-text" id="sb">
+                <label>Subject</label>
+            </div>
+
+        </div>
+
+        <!-- Body -->
+        <div class="input-group-text bd">
+            <label>Body</label>
+            <textarea id="bd" readonly></textarea>
+        </div>
+
+        <!-- Footer -->
+        <div class="input-group-text footer" data-role=footer></div>
+
+        <!-- Reply Button -->
+        <a data-role="button" class="btn colour-btn left-btn"
+        onclick="goToComposeA()">
+            Reply
+        </a>
+
+        <!-- Back Button -->
+        <a data-role="button" class="btn colour-btn middle-btn"
+        onclick="goBack()">
+            Back
+        </a>
+
+        <!-- Help Button -->
+        <a data-role="button" class="btn colour-btn right-btn"
+        onclick="getHelpInboxItem()">
+            Help
+        </a>
+
+
+    </div>
+
+    <script src="./js/emailsA.js"></script>
+    <script src="./js/navigation.js"></script>
+    <script src="./js/help.js"></script>
+    <script src="./js/jquery-3.4.1.min.js"></script>
+</body>
+
+</html>

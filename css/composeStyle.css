@@ -1,0 +1,221 @@
+/**
+ * Consists of general styles for HTML elements followed
+ * by styles for classes and id's.
+ *
+ * Referenced By: compose.html
+ *                composeA.html
+ *                inboxItem.html
+ *                inboxItemA.html
+ *                outboxItem.html
+ *                outboxItemA.html
+ *
+ * Author: Angus Anthony (A00429430)
+ * Author: Celine Ayoub (A00423097)
+ */
+
+/*********************************HTML***************************************/
+
+/**
+ * General style for the body.
+ */
+body
+{
+  background-color:#f8f9fa;
+}
+
+/**
+ * General style for textareas.
+ */
+textarea
+{
+  resize: none;
+  width: 100%;
+  height: 100%;
+}
+
+/**
+ * General style for labels.
+ */
+label
+{
+  margin-top: .5rem;
+  margin-right: .5rem;
+  width: 5%;
+  text-align: right;
+  cursor: help;
+}
+
+/**
+ * General style for forms.
+ */
+form
+{
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+}
+
+/*********************************GRIDS**************************************/
+
+/**
+ * Contains the common style elements of the all the following grids.
+ */
+.container
+{
+  height: 100%;
+  display: grid;
+  grid-gap: 3px;
+  padding: 5px;
+}
+
+/**
+ * The main grid which contains and organizes all of the content
+ * on the inbox and outbox item pages.
+ */
+.item-container
+{
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 196px auto 10px 38px;
+}
+
+/**
+ * The main grid which contains and organizes all of the content
+ * on the student compose page.
+ */
+.compose-container
+{
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 234px auto 10px 38px;
+}
+
+/**
+ * The main grid which contains and organizes all of the content
+ * on the admin compose page.
+ */
+.compose-container-admin
+{
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 286px auto 10px 38px;
+}
+
+/*****************************CONTAINER ELEMENTS*****************************/
+
+/**
+ * Used to determine the style and placement of "header" within the
+ * "container" grid.
+ */
+.header
+{
+  grid-column: 1 / -1;
+}
+
+/**
+ * Styles all elements with the class name "help".
+ */
+.help
+{
+  background-color: #ffffcc;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/**
+ * Styles all elements with the class name "dropdown".
+ */
+.dropdown
+{
+  text-align: left;
+  width: 100%;
+  background-color: white;
+}
+
+/**
+ * Used to determine the style and placement of "bd" within the
+ * "container" grid.
+ */
+.bd
+{
+  grid-column: 1 / -1;
+}
+
+/**
+ * Used to determine the style and placement of "footer" within the
+ * "container" grid.
+ */
+.footer
+{
+  grid-column: 1 / -1;
+  padding: 2px;
+}
+
+/**
+ * Used to determine the style and placement of "left-btn" within the
+ * "container" grid.
+ */
+.left-btn
+{
+  grid-column: 1 / 2;
+}
+
+/**
+ * Style for the "left-btn" class when an element of this
+ * class is hovered over.
+ */
+.left-btn:hover
+{
+  background-color: snow;
+  cursor: default;
+}
+
+/**
+ * Used to determine the style and placement of "middle-btn" within the
+ * "container" grid.
+ */
+.middle-btn
+{
+  grid-column: 2 / 3;
+}
+
+/**
+ * Style for the "middle-btn" class when an element of this
+ * class is hovered over.
+ */
+.middle-btn:hover
+{
+  background-color: snow;
+  cursor: default;
+}
+
+/**
+ * Used to determine the style and placement of "right-btn" within the
+ * "container" grid.
+ */
+.right-btn
+{
+  grid-column: 3 / 4;
+}
+
+/**
+ * Style for the "right-btn" class when an element of this
+ * class is hovered over.
+ */
+.right-btn:hover
+{
+  background-color: snow;
+  cursor: default;
+}
+
+/**
+ * Styles all elements with the class name "colour-btn".
+ */
+.colour-btn
+{
+  width: 100%;
+  text-align: center;
+  font-weight: 500;
+  background-color: lightgray;
+  transition-duration: 0.4s;
+  border-width: 1px;
+  border-color: white;
+  margin: 0px;
+}

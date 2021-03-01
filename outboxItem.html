@@ -1,0 +1,73 @@
+<!-- The Outbox Item page for the student side of the email system. -->
+<!-- Author: Angus Anthony (A00429430) -->
+<!-- Author: Celine Ayoub (A00423097) -->
+
+<html>
+
+<head>
+    <title>Your Email System</title>
+
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/composeStyle.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body onload="loadEmail('outboxItem.html')">
+
+    <div class="container item-container">
+
+        <div class="header">
+
+            <!-- Outbox Item header -->
+            <div class="input-group-text">
+                VIEWING SENT ITEM
+            </div>
+
+            <!-- To -->
+            <div class="input-group-text" id="to">
+                <label>To</label>
+            </div>
+
+            <!-- Cc -->
+            <div class="input-group-text" id="cc">
+                <label>Cc</label>
+            </div>
+
+            <!-- Subject -->
+            <div class="input-group-text" id="sb">
+                <label>Subject</label>
+            </div>
+
+        </div>
+
+        <!-- Body -->
+        <div class="input-group-text bd">
+            <label>Body</label>
+            <textarea id="bd" readonly></textarea>
+        </div>
+
+        <!-- Footer -->
+        <div class="input-group-text footer" data-role=footer></div>
+
+        <!-- Back Button -->
+        <a data-role="button" class="btn colour-btn left-btn"
+        onclick="goBack()">
+            Back
+        </a>
+
+        <!-- Help Button -->
+        <a data-role="button" class="btn colour-btn middle-btn"
+        onclick="getHelpOutboxItem()">
+            Help
+        </a>
+
+    </div>
+
+    <script src="./js/emails.js"></script>
+    <script src="./js/navigation.js"></script>
+    <script src="./js/help.js"></script>
+    <script src="./js/jquery-3.4.1.min.js"></script>
+</body>
+
+</html>

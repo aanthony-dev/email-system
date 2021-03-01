@@ -1,0 +1,94 @@
+<!-- The Compose page for the admin side of the email system. -->
+<!-- Author: Angus Anthony (A00429430) -->
+<!-- Author: Celine Ayoub (A00423097) -->
+
+<html>
+
+<head>
+    <title>Admin Email System</title>
+
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/composeStyle.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body onload="loadCompose('composeA.html')">
+
+    <div class="container compose-container-admin">
+
+        <div class="header">
+
+            <!-- Compose header -->
+            <div class="input-group-text">
+                COMPOSING
+            </div>
+
+            <!-- Help prompt -->
+            <div class="input-group-text help">
+                Did you know that you can click on To, Cc, Subject or
+                Body and help will appear?
+            </div>
+
+            <!-- To -->
+            <div class="input-group-text">
+                <label onclick="toHelp()">To</label>
+                <form id="to-form"></form>
+            </div>
+
+            <!-- From -->
+            <div class="input-group-text">
+                <label onclick="toHelp()">From</label>
+                <form id="from-form"></form>
+            </div>
+
+            <!-- Cc -->
+            <div class="input-group-text">
+                <label onclick="ccHelp()">Cc</label>
+                <form id="cc-form"></form>
+            </div>
+
+            <!-- Subject -->
+            <div class="input-group-text">
+                <label onclick="sbHelp()">Subject</label>
+                <input class="form-control" type="text" id="sb" />
+            </div>
+
+        </div>
+
+        <!-- Body -->
+        <div class="input-group-text bd">
+            <label onclick="bdHelp()">Body</label>
+            <textarea id="bd"></textarea>
+        </div>
+
+        <!-- Footer -->
+        <div class="input-group-text footer" data-role=footer></div>
+
+        <!-- Send Button -->
+        <a data-role="button" class="btn colour-btn left-btn"
+        onclick="send('composeA.html')">
+            Send
+        </a>
+
+        <!-- Cancel Button -->
+        <a data-role="button" class="btn colour-btn middle-btn"
+        onclick="cancel()">
+            Cancel
+        </a>
+
+        <!-- Help Button -->
+        <a data-role="button" class="btn colour-btn right-btn"
+        onclick="getHelpCompose()">
+            Help
+        </a>
+
+    </div>
+
+    <script src="./js/emailsA.js"></script>
+    <script src="./js/navigation.js"></script>
+    <script src="./js/help.js"></script>
+    <script src="./js/jquery-3.4.1.min.js"></script>
+</body>
+
+</html>

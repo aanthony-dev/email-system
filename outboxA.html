@@ -1,0 +1,69 @@
+<!-- The Outbox page for the admin side of the email system. -->
+<!-- Author: Angus Anthony (A00429430) -->
+<!-- Author: Celine Ayoub (A00423097) -->
+
+<html>
+
+<head>
+    <title>Admin Email System</title>
+
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/inboxStyle.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body onload="loadMail('outboxA.html')">
+
+    <div class="container">
+
+        <div class="header-container">
+
+            <!-- Inbox header -->
+            <div class="input-group-text header">OUTBOX</div>
+
+            <!-- To header -->
+            <a data-role="button" class="btn from">
+                <span class="header-text">TO</span>
+            </a>
+
+            <!-- Subject header -->
+            <a data-role="button" class="btn subject">
+                <span class="header-text">SUBJECT</span>
+            </a>
+
+        </div>
+
+        <!-- Email container -->
+        <div class="email-container" id="email-container"></div>
+
+        <!-- Footer -->
+        <div class="input-group-text footer" data-role=footer></div>
+
+        <!-- Inbox Button -->
+        <a data-role="button" class="btn outbox-btn colour-btn"
+        onclick="goToInboxA()">
+            Inbox
+        </a>
+
+        <!-- Compose Button -->
+        <a data-role="button" class="btn compose-btn colour-btn"
+        onclick="goToComposeA()">
+            Compose
+        </a>
+
+        <!-- Help Button -->
+        <a data-role="button" class="btn help-btn colour-btn"
+        onclick="getHelpOutbox()">
+            Help
+        </a>
+
+    </div>
+
+    <script src="./js/emailsA.js"></script>
+    <script src="./js/navigation.js"></script>
+    <script src="./js/help.js"></script>
+    <script src="./js/jquery-3.4.1.min.js"></script>
+</body>
+
+</html>
